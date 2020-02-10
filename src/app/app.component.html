@@ -1,6 +1,9 @@
 <input type="text" [(ngModel)]="title">
 {{ title }}
 
+<!-- Implementacion de pipe personalizado -->
+<input type="text" [(ngModel)]="power">
+{{ power | exponential }}
 
 <div *ngIf="title === 'nicolas'">
   este es nicolas
